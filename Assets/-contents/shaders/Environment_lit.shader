@@ -35,7 +35,7 @@ Shader "vr/Environment_lit" {
             #pragma multi_compile DIRLIGHTMAP_OFF DIRLIGHTMAP_COMBINED DIRLIGHTMAP_SEPARATE
             #pragma multi_compile DYNAMICLIGHTMAP_OFF DYNAMICLIGHTMAP_ON
             #pragma multi_compile_fog
-            #pragma exclude_renderers gles3 metal xbox360 xboxone ps3 ps4 psp2 
+            #pragma exclude_renderers metal xbox360 xboxone ps3 ps4 psp2 
             #pragma target 3.0
             uniform float4 _Color;
             uniform samplerCUBE _CubeMap;
@@ -167,7 +167,7 @@ Shader "vr/Environment_lit" {
             #pragma multi_compile DIRLIGHTMAP_OFF DIRLIGHTMAP_COMBINED DIRLIGHTMAP_SEPARATE
             #pragma multi_compile DYNAMICLIGHTMAP_OFF DYNAMICLIGHTMAP_ON
             #pragma multi_compile_fog
-            #pragma exclude_renderers gles3 metal xbox360 xboxone ps3 ps4 psp2 
+            #pragma exclude_renderers metal xbox360 xboxone ps3 ps4 psp2 
             #pragma target 3.0
             uniform float4 _Color;
             uniform samplerCUBE _CubeMap;
@@ -255,7 +255,7 @@ Shader "vr/Environment_lit" {
             #pragma multi_compile DIRLIGHTMAP_OFF DIRLIGHTMAP_COMBINED DIRLIGHTMAP_SEPARATE
             #pragma multi_compile DYNAMICLIGHTMAP_OFF DYNAMICLIGHTMAP_ON
             #pragma multi_compile_fog
-            #pragma exclude_renderers gles3 metal xbox360 xboxone ps3 ps4 psp2 
+            #pragma exclude_renderers metal xbox360 xboxone ps3 ps4 psp2 
             #pragma target 3.0
             uniform float4 _Color;
             uniform samplerCUBE _CubeMap;
