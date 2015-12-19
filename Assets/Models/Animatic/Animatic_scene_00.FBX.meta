@@ -37,6 +37,7 @@ ModelImporter:
     100058: Glass002
     100060: Glass003
     100062: Room
+    100064: Earth
     400000: //RootNode
     400002: board
     400004: Door
@@ -69,6 +70,7 @@ ModelImporter:
     400058: Glass002
     400060: Glass003
     400062: Room
+    400064: Earth
     2300000: board
     2300002: Door
     2300004: DoorWall
@@ -99,6 +101,7 @@ ModelImporter:
     2300054: Glass001
     2300056: Glass002
     2300058: Glass003
+    2300060: Earth
     3300000: board
     3300002: Door
     3300004: DoorWall
@@ -129,6 +132,7 @@ ModelImporter:
     3300054: Glass001
     3300056: Glass002
     3300058: Glass003
+    3300060: Earth
     4300000: DoorWall
     4300002: Door
     4300004: board
@@ -159,6 +163,7 @@ ModelImporter:
     4300054: Glass001
     4300056: Glass002
     4300058: Glass003
+    4300060: Earth
     9500000: //RootNode
   materials:
     importMaterials: 1
