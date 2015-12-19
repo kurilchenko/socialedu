@@ -12,6 +12,31 @@ ModelImporter:
     100008: Table
     100010: TableBoard
     100012: wall
+    100014: Box001
+    100016: Box002
+    100018: Box003
+    100020: Box004
+    100022: Chair
+    100024: Chair001
+    100026: Chair002
+    100028: Chair003
+    100030: Chair004
+    100032: Chair005
+    100034: Chair006
+    100036: Chair007
+    100038: Chair008
+    100040: Chair009
+    100042: Chair010
+    100044: Chair011
+    100046: Chair012
+    100048: Chair013
+    100050: Chair014
+    100052: Chair015
+    100054: Glass
+    100056: Glass001
+    100058: Glass002
+    100060: Glass003
+    100062: Room
     400000: //RootNode
     400002: board
     400004: Door
@@ -19,24 +44,121 @@ ModelImporter:
     400008: Table
     400010: TableBoard
     400012: wall
+    400014: Box001
+    400016: Box002
+    400018: Box003
+    400020: Box004
+    400022: Chair
+    400024: Chair001
+    400026: Chair002
+    400028: Chair003
+    400030: Chair004
+    400032: Chair005
+    400034: Chair006
+    400036: Chair007
+    400038: Chair008
+    400040: Chair009
+    400042: Chair010
+    400044: Chair011
+    400046: Chair012
+    400048: Chair013
+    400050: Chair014
+    400052: Chair015
+    400054: Glass
+    400056: Glass001
+    400058: Glass002
+    400060: Glass003
+    400062: Room
     2300000: board
     2300002: Door
     2300004: DoorWall
     2300006: Table
     2300008: TableBoard
     2300010: wall
+    2300012: Box001
+    2300014: Box002
+    2300016: Box003
+    2300018: Box004
+    2300020: Chair
+    2300022: Chair001
+    2300024: Chair002
+    2300026: Chair003
+    2300028: Chair004
+    2300030: Chair005
+    2300032: Chair006
+    2300034: Chair007
+    2300036: Chair008
+    2300038: Chair009
+    2300040: Chair010
+    2300042: Chair011
+    2300044: Chair012
+    2300046: Chair013
+    2300048: Chair014
+    2300050: Chair015
+    2300052: Glass
+    2300054: Glass001
+    2300056: Glass002
+    2300058: Glass003
     3300000: board
     3300002: Door
     3300004: DoorWall
     3300006: Table
     3300008: TableBoard
     3300010: wall
+    3300012: Box001
+    3300014: Box002
+    3300016: Box003
+    3300018: Box004
+    3300020: Chair
+    3300022: Chair001
+    3300024: Chair002
+    3300026: Chair003
+    3300028: Chair004
+    3300030: Chair005
+    3300032: Chair006
+    3300034: Chair007
+    3300036: Chair008
+    3300038: Chair009
+    3300040: Chair010
+    3300042: Chair011
+    3300044: Chair012
+    3300046: Chair013
+    3300048: Chair014
+    3300050: Chair015
+    3300052: Glass
+    3300054: Glass001
+    3300056: Glass002
+    3300058: Glass003
     4300000: DoorWall
     4300002: Door
     4300004: board
     4300006: Table
     4300008: TableBoard
     4300010: wall
+    4300012: Chair008
+    4300014: Chair007
+    4300016: Chair006
+    4300018: Chair005
+    4300020: Chair004
+    4300022: Chair003
+    4300024: Chair002
+    4300026: Chair001
+    4300028: Chair
+    4300030: Box004
+    4300032: Box003
+    4300034: Box002
+    4300036: Box001
+    4300038: Chair009
+    4300040: Chair010
+    4300042: Chair011
+    4300044: Chair012
+    4300046: Chair013
+    4300048: Chair014
+    4300050: Chair015
+    4300052: Glass
+    4300054: Glass001
+    4300056: Glass002
+    4300058: Glass003
     9500000: //RootNode
   materials:
     importMaterials: 1
