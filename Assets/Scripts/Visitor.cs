@@ -9,8 +9,9 @@ public class Visitor : MonoBehaviour
     [HideInInspector]
     public Sight sight;
 
-    GameObject lastTarget;
+    public GameObject lastTarget;
     float elapesdTimeOnTarget;
+    float targetInteractionTime;
 
     void Start()
     {
@@ -37,6 +38,15 @@ public class Visitor : MonoBehaviour
             if (sight.target != null)
             {
                 Invoke("InteractWithTarget", interactionTime);
+
+                var thing = sight.target.GetComponent<InteractiveThing>();
+
+                Debug.Log(sight.target.name + " " + thing);
+
+                if (thing != null)
+                {
+                    targetInteractionTime = thing.interactionTime;
+                }
             }
         }
         else if (sight.target != null)

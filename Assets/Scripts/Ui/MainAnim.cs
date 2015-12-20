@@ -41,6 +41,8 @@ public class MainAnim : MonoBehaviour
         selfDefault.SetParam(self);
 
         ResetAnim();
+
+        StartAnim();
      }
     void ResetAnim()
     {
