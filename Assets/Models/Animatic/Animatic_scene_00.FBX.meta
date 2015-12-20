@@ -38,6 +38,19 @@ ModelImporter:
     100060: Glass003
     100062: Room
     100064: Earth
+    100066: Cosmo
+    100068: Floor_00
+    100070: floor_01
+    100072: floor_02
+    100074: Moon
+    100076: MoonRot
+    100078: Shawdow
+    100080: SpaceZ
+    100082: wall_01
+    100084: wall_01 1
+    100086: wall_02
+    100088: wall_03
+    100090: wall_04
     400000: //RootNode
     400002: board
     400004: Door
@@ -71,6 +84,19 @@ ModelImporter:
     400060: Glass003
     400062: Room
     400064: Earth
+    400066: Cosmo
+    400068: Floor_00
+    400070: floor_01
+    400072: floor_02
+    400074: Moon
+    400076: MoonRot
+    400078: Shawdow
+    400080: SpaceZ
+    400082: wall_01
+    400084: wall_01 1
+    400086: wall_02
+    400088: wall_03
+    400090: wall_04
     2300000: board
     2300002: Door
     2300004: DoorWall
@@ -102,6 +128,17 @@ ModelImporter:
     2300056: Glass002
     2300058: Glass003
     2300060: Earth
+    2300062: Floor_00
+    2300064: floor_01
+    2300066: floor_02
+    2300068: Moon
+    2300070: Shawdow
+    2300072: SpaceZ
+    2300074: wall_01
+    2300076: wall_01 1
+    2300078: wall_02
+    2300080: wall_03
+    2300082: wall_04
     3300000: board
     3300002: Door
     3300004: DoorWall
@@ -133,6 +170,17 @@ ModelImporter:
     3300056: Glass002
     3300058: Glass003
     3300060: Earth
+    3300062: Floor_00
+    3300064: floor_01
+    3300066: floor_02
+    3300068: Moon
+    3300070: Shawdow
+    3300072: SpaceZ
+    3300074: wall_01
+    3300076: wall_01 1
+    3300078: wall_02
+    3300080: wall_03
+    3300082: wall_04
     4300000: DoorWall
     4300002: Door
     4300004: board
@@ -164,6 +212,20 @@ ModelImporter:
     4300056: Glass002
     4300058: Glass003
     4300060: Earth
+    4300062: Floor_00
+    4300064: wall_01
+    4300066: wall_01
+    4300068: wall_02
+    4300070: wall_03
+    4300072: wall_04
+    4300074: floor_01
+    4300076: floor_02
+    4300078: SpaceZ
+    4300080: Moon
+    4300082: Shawdow
+    7400000: Take 002
+    7400002: Take 001
+    7400004: Take 000
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -185,7 +247,283 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 450
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cosmo
+        weight: 1
+      - path: Cosmo/Earth
+        weight: 1
+      - path: Cosmo/MoonRot
+        weight: 1
+      - path: Cosmo/MoonRot/Moon
+        weight: 1
+      - path: Cosmo/SpaceZ
+        weight: 1
+      - path: Room
+        weight: 1
+      - path: Room/board
+        weight: 1
+      - path: Room/Chair007
+        weight: 1
+      - path: Room/Chair008
+        weight: 1
+      - path: Room/Chair009
+        weight: 1
+      - path: Room/Chair010
+        weight: 1
+      - path: Room/Chair011
+        weight: 1
+      - path: Room/Chair012
+        weight: 1
+      - path: Room/Chair013
+        weight: 1
+      - path: Room/Chair014
+        weight: 1
+      - path: Room/Chair015
+        weight: 1
+      - path: Room/Floor_00
+        weight: 1
+      - path: Room/floor_01
+        weight: 1
+      - path: Room/floor_02
+        weight: 1
+      - path: Room/Table
+        weight: 1
+      - path: Room/TableBoard
+        weight: 1
+      - path: Room/wall_01
+        weight: 1
+      - path: Room/wall_01/Glass
+        weight: 1
+      - path: Room/wall_01 1
+        weight: 1
+      - path: Room/wall_01 1/Glass001
+        weight: 1
+      - path: Room/wall_01 1/Glass002
+        weight: 1
+      - path: Room/wall_02
+        weight: 1
+      - path: Room/wall_03
+        weight: 1
+      - path: Room/wall_04
+        weight: 1
+      - path: Room/wall_04/Glass003
+        weight: 1
+      - path: Shawdow
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Take 002
+      takeName: Take 001
+      firstFrame: 450
+      lastFrame: 900
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cosmo
+        weight: 1
+      - path: Cosmo/Earth
+        weight: 1
+      - path: Cosmo/MoonRot
+        weight: 1
+      - path: Cosmo/MoonRot/Moon
+        weight: 1
+      - path: Cosmo/SpaceZ
+        weight: 1
+      - path: Room
+        weight: 1
+      - path: Room/board
+        weight: 1
+      - path: Room/Chair007
+        weight: 1
+      - path: Room/Chair008
+        weight: 1
+      - path: Room/Chair009
+        weight: 1
+      - path: Room/Chair010
+        weight: 1
+      - path: Room/Chair011
+        weight: 1
+      - path: Room/Chair012
+        weight: 1
+      - path: Room/Chair013
+        weight: 1
+      - path: Room/Chair014
+        weight: 1
+      - path: Room/Chair015
+        weight: 1
+      - path: Room/Floor_00
+        weight: 1
+      - path: Room/floor_01
+        weight: 1
+      - path: Room/floor_02
+        weight: 1
+      - path: Room/Table
+        weight: 1
+      - path: Room/TableBoard
+        weight: 1
+      - path: Room/wall_01
+        weight: 1
+      - path: Room/wall_01/Glass
+        weight: 1
+      - path: Room/wall_01 1
+        weight: 1
+      - path: Room/wall_01 1/Glass001
+        weight: 1
+      - path: Room/wall_01 1/Glass002
+        weight: 1
+      - path: Room/wall_02
+        weight: 1
+      - path: Room/wall_03
+        weight: 1
+      - path: Room/wall_04
+        weight: 1
+      - path: Room/wall_04/Glass003
+        weight: 1
+      - path: Shawdow
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Take 000
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 2
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cosmo
+        weight: 1
+      - path: Cosmo/Earth
+        weight: 1
+      - path: Cosmo/MoonRot
+        weight: 1
+      - path: Cosmo/MoonRot/Moon
+        weight: 1
+      - path: Cosmo/SpaceZ
+        weight: 1
+      - path: Room
+        weight: 1
+      - path: Room/board
+        weight: 1
+      - path: Room/Chair007
+        weight: 1
+      - path: Room/Chair008
+        weight: 1
+      - path: Room/Chair009
+        weight: 1
+      - path: Room/Chair010
+        weight: 1
+      - path: Room/Chair011
+        weight: 1
+      - path: Room/Chair012
+        weight: 1
+      - path: Room/Chair013
+        weight: 1
+      - path: Room/Chair014
+        weight: 1
+      - path: Room/Chair015
+        weight: 1
+      - path: Room/Floor_00
+        weight: 1
+      - path: Room/floor_01
+        weight: 1
+      - path: Room/floor_02
+        weight: 1
+      - path: Room/Table
+        weight: 1
+      - path: Room/TableBoard
+        weight: 1
+      - path: Room/wall_01
+        weight: 1
+      - path: Room/wall_01/Glass
+        weight: 1
+      - path: Room/wall_01 1
+        weight: 1
+      - path: Room/wall_01 1/Glass001
+        weight: 1
+      - path: Room/wall_01 1/Glass002
+        weight: 1
+      - path: Room/wall_02
+        weight: 1
+      - path: Room/wall_03
+        weight: 1
+      - path: Room/wall_04
+        weight: 1
+      - path: Room/wall_04/Glass003
+        weight: 1
+      - path: Shawdow
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
