@@ -55,6 +55,16 @@ public class PosePlayer : MonoBehaviour
         StartCoroutine(CoPlayHeadData());
     }
 
+    public bool isRecorded;
+
+    void Start()
+    {
+        if (isRecorded)
+        {
+            Play();
+        }
+    }
+
     IEnumerator CoPlayHeadData()
     {
         var i = 0;
