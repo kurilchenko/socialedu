@@ -281,6 +281,8 @@ ModelImporter:
     7400004: Take 000
     7400006: Take 001
     7400008: Take 0010
+    7400010: Take 003
+    7400012: Take 0011
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -360,23 +362,7 @@ ModelImporter:
         weight: 1
       - path: Room/board
         weight: 1
-      - path: Room/Chair007
-        weight: 1
-      - path: Room/Chair008
-        weight: 1
-      - path: Room/Chair009
-        weight: 1
       - path: Room/Chair010
-        weight: 1
-      - path: Room/Chair011
-        weight: 1
-      - path: Room/Chair012
-        weight: 1
-      - path: Room/Chair013
-        weight: 1
-      - path: Room/Chair014
-        weight: 1
-      - path: Room/Chair015
         weight: 1
       - path: Room/Floor_00
         weight: 1
@@ -384,17 +370,11 @@ ModelImporter:
         weight: 1
       - path: Room/floor_02
         weight: 1
-      - path: Room/Table
-        weight: 1
-      - path: Room/TableBoard
-        weight: 1
       - path: Room/wall_01
         weight: 1
       - path: Room/wall_01/Glass
         weight: 1
       - path: Room/wall_01 1
-        weight: 1
-      - path: Room/wall_01 1/Glass001
         weight: 1
       - path: Room/wall_01 1/Glass002
         weight: 1
@@ -405,8 +385,6 @@ ModelImporter:
       - path: Room/wall_04
         weight: 1
       - path: Room/wall_04/Glass003
-        weight: 1
-      - path: Shawdow
         weight: 1
       - path: SpaceZ
         weight: 1
@@ -419,7 +397,7 @@ ModelImporter:
       name: Take 001
       takeName: Take 001
       firstFrame: 5
-      lastFrame: 450
+      lastFrame: 540
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -472,23 +450,7 @@ ModelImporter:
         weight: 1
       - path: Room/board
         weight: 1
-      - path: Room/Chair007
-        weight: 1
-      - path: Room/Chair008
-        weight: 1
-      - path: Room/Chair009
-        weight: 1
       - path: Room/Chair010
-        weight: 1
-      - path: Room/Chair011
-        weight: 1
-      - path: Room/Chair012
-        weight: 1
-      - path: Room/Chair013
-        weight: 1
-      - path: Room/Chair014
-        weight: 1
-      - path: Room/Chair015
         weight: 1
       - path: Room/Floor_00
         weight: 1
@@ -496,17 +458,11 @@ ModelImporter:
         weight: 1
       - path: Room/floor_02
         weight: 1
-      - path: Room/Table
-        weight: 1
-      - path: Room/TableBoard
-        weight: 1
       - path: Room/wall_01
         weight: 1
       - path: Room/wall_01/Glass
         weight: 1
       - path: Room/wall_01 1
-        weight: 1
-      - path: Room/wall_01 1/Glass001
         weight: 1
       - path: Room/wall_01 1/Glass002
         weight: 1
@@ -517,8 +473,6 @@ ModelImporter:
       - path: Room/wall_04
         weight: 1
       - path: Room/wall_04/Glass003
-        weight: 1
-      - path: Shawdow
         weight: 1
       - path: SpaceZ
         weight: 1
@@ -530,8 +484,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Take 002
       takeName: Take 001
-      firstFrame: 451
-      lastFrame: 900
+      firstFrame: 540
+      lastFrame: 920
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -584,23 +538,7 @@ ModelImporter:
         weight: 1
       - path: Room/board
         weight: 1
-      - path: Room/Chair007
-        weight: 1
-      - path: Room/Chair008
-        weight: 1
-      - path: Room/Chair009
-        weight: 1
       - path: Room/Chair010
-        weight: 1
-      - path: Room/Chair011
-        weight: 1
-      - path: Room/Chair012
-        weight: 1
-      - path: Room/Chair013
-        weight: 1
-      - path: Room/Chair014
-        weight: 1
-      - path: Room/Chair015
         weight: 1
       - path: Room/Floor_00
         weight: 1
@@ -608,17 +546,11 @@ ModelImporter:
         weight: 1
       - path: Room/floor_02
         weight: 1
-      - path: Room/Table
-        weight: 1
-      - path: Room/TableBoard
-        weight: 1
       - path: Room/wall_01
         weight: 1
       - path: Room/wall_01/Glass
         weight: 1
       - path: Room/wall_01 1
-        weight: 1
-      - path: Room/wall_01 1/Glass001
         weight: 1
       - path: Room/wall_01 1/Glass002
         weight: 1
@@ -629,8 +561,6 @@ ModelImporter:
       - path: Room/wall_04
         weight: 1
       - path: Room/wall_04/Glass003
-        weight: 1
-      - path: Shawdow
         weight: 1
       - path: SpaceZ
         weight: 1
@@ -696,23 +626,7 @@ ModelImporter:
         weight: 1
       - path: Room/board
         weight: 1
-      - path: Room/Chair007
-        weight: 1
-      - path: Room/Chair008
-        weight: 1
-      - path: Room/Chair009
-        weight: 1
       - path: Room/Chair010
-        weight: 1
-      - path: Room/Chair011
-        weight: 1
-      - path: Room/Chair012
-        weight: 1
-      - path: Room/Chair013
-        weight: 1
-      - path: Room/Chair014
-        weight: 1
-      - path: Room/Chair015
         weight: 1
       - path: Room/Floor_00
         weight: 1
@@ -720,17 +634,11 @@ ModelImporter:
         weight: 1
       - path: Room/floor_02
         weight: 1
-      - path: Room/Table
-        weight: 1
-      - path: Room/TableBoard
-        weight: 1
       - path: Room/wall_01
         weight: 1
       - path: Room/wall_01/Glass
         weight: 1
       - path: Room/wall_01 1
-        weight: 1
-      - path: Room/wall_01 1/Glass001
         weight: 1
       - path: Room/wall_01 1/Glass002
         weight: 1
@@ -742,7 +650,181 @@ ModelImporter:
         weight: 1
       - path: Room/wall_04/Glass003
         weight: 1
-      - path: Shawdow
+      - path: SpaceZ
+        weight: 1
+      - path: Upiter
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Take 003
+      takeName: Take 001
+      firstFrame: 921
+      lastFrame: 1600
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cosmo
+        weight: 1
+      - path: Cosmo/Earth
+        weight: 1
+      - path: Cosmo/MoonRot
+        weight: 1
+      - path: Cosmo/MoonRot/Moon
+        weight: 1
+      - path: Cosmo/SpaceZ_tail
+        weight: 1
+      - path: Cosmo/SpaceZController
+        weight: 1
+      - path: Cosmo/Sun
+        weight: 1
+      - path: Cosmo/Sun/Rot_01
+        weight: 1
+      - path: Cosmo/Sun/Rot_01/Sun001
+        weight: 1
+      - path: Cosmo/Sun/Rot_002
+        weight: 1
+      - path: Cosmo/Sun/Rot_002/Sun002
+        weight: 1
+      - path: Cosmo/Sun/Rot_003
+        weight: 1
+      - path: Cosmo/Sun/Rot_003/Sun003
+        weight: 1
+      - path: Room
+        weight: 1
+      - path: Room/board
+        weight: 1
+      - path: Room/Chair010
+        weight: 1
+      - path: Room/Floor_00
+        weight: 1
+      - path: Room/floor_01
+        weight: 1
+      - path: Room/floor_02
+        weight: 1
+      - path: Room/wall_01
+        weight: 1
+      - path: Room/wall_01/Glass
+        weight: 1
+      - path: Room/wall_01 1
+        weight: 1
+      - path: Room/wall_01 1/Glass002
+        weight: 1
+      - path: Room/wall_02
+        weight: 1
+      - path: Room/wall_03
+        weight: 1
+      - path: Room/wall_04
+        weight: 1
+      - path: Room/wall_04/Glass003
+        weight: 1
+      - path: SpaceZ
+        weight: 1
+      - path: Upiter
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Take 0011
+      takeName: Take 001
+      firstFrame: 1700
+      lastFrame: 1999.9999
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cosmo
+        weight: 1
+      - path: Cosmo/Earth
+        weight: 1
+      - path: Cosmo/MoonRot
+        weight: 1
+      - path: Cosmo/MoonRot/Moon
+        weight: 1
+      - path: Cosmo/SpaceZ_tail
+        weight: 1
+      - path: Cosmo/SpaceZController
+        weight: 1
+      - path: Cosmo/Sun
+        weight: 1
+      - path: Cosmo/Sun/Rot_01
+        weight: 1
+      - path: Cosmo/Sun/Rot_01/Sun001
+        weight: 1
+      - path: Cosmo/Sun/Rot_002
+        weight: 1
+      - path: Cosmo/Sun/Rot_002/Sun002
+        weight: 1
+      - path: Cosmo/Sun/Rot_003
+        weight: 1
+      - path: Cosmo/Sun/Rot_003/Sun003
+        weight: 1
+      - path: Room
+        weight: 1
+      - path: Room/board
+        weight: 1
+      - path: Room/Chair010
+        weight: 1
+      - path: Room/Floor_00
+        weight: 1
+      - path: Room/floor_01
+        weight: 1
+      - path: Room/floor_02
+        weight: 1
+      - path: Room/wall_01
+        weight: 1
+      - path: Room/wall_01/Glass
+        weight: 1
+      - path: Room/wall_01 1
+        weight: 1
+      - path: Room/wall_01 1/Glass002
+        weight: 1
+      - path: Room/wall_02
+        weight: 1
+      - path: Room/wall_03
+        weight: 1
+      - path: Room/wall_04
+        weight: 1
+      - path: Room/wall_04/Glass003
         weight: 1
       - path: SpaceZ
         weight: 1
