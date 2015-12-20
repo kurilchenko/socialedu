@@ -51,6 +51,19 @@ ModelImporter:
     100086: wall_02
     100088: wall_03
     100090: wall_04
+    100092: SpaceZ_tail
+    100094: SpaceZController
+    100096: Sun
+    100098: Glass004
+    100100: Rot_002
+    100102: Rot_003
+    100104: Rot_01
+    100106: Sun001
+    100108: Sun002
+    100110: Sun003
+    100112: Upiter
+    100114: wall_005
+    100116: wall_006
     400000: //RootNode
     400002: board
     400004: Door
@@ -97,6 +110,19 @@ ModelImporter:
     400086: wall_02
     400088: wall_03
     400090: wall_04
+    400092: SpaceZ_tail
+    400094: SpaceZController
+    400096: Sun
+    400098: Glass004
+    400100: Rot_002
+    400102: Rot_003
+    400104: Rot_01
+    400106: Sun001
+    400108: Sun002
+    400110: Sun003
+    400112: Upiter
+    400114: wall_005
+    400116: wall_006
     2300000: board
     2300002: Door
     2300004: DoorWall
@@ -139,6 +165,15 @@ ModelImporter:
     2300078: wall_02
     2300080: wall_03
     2300082: wall_04
+    2300084: SpaceZ_tail
+    2300086: Sun
+    2300088: Glass004
+    2300090: Sun001
+    2300092: Sun002
+    2300094: Sun003
+    2300096: Upiter
+    2300098: wall_005
+    2300100: wall_006
     3300000: board
     3300002: Door
     3300004: DoorWall
@@ -181,6 +216,15 @@ ModelImporter:
     3300078: wall_02
     3300080: wall_03
     3300082: wall_04
+    3300084: SpaceZ_tail
+    3300086: Sun
+    3300088: Glass004
+    3300090: Sun001
+    3300092: Sun002
+    3300094: Sun003
+    3300096: Upiter
+    3300098: wall_005
+    3300100: wall_006
     4300000: DoorWall
     4300002: Door
     4300004: board
@@ -223,10 +267,20 @@ ModelImporter:
     4300078: SpaceZ
     4300080: Moon
     4300082: Shawdow
+    4300084: SpaceZ_tail
+    4300086: Sun
+    4300088: wall_005
+    4300090: Glass004
+    4300092: wall_006
+    4300094: Sun001
+    4300096: Sun002
+    4300098: Sun003
+    4300100: Upiter
     7400000: Take 002
     7400002: Take 000
     7400004: Take 000
     7400006: Take 001
+    7400008: Take 0010
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -284,7 +338,23 @@ ModelImporter:
         weight: 1
       - path: Cosmo/MoonRot/Moon
         weight: 1
-      - path: Cosmo/SpaceZ
+      - path: Cosmo/SpaceZ_tail
+        weight: 1
+      - path: Cosmo/SpaceZController
+        weight: 1
+      - path: Cosmo/Sun
+        weight: 1
+      - path: Cosmo/Sun/Rot_01
+        weight: 1
+      - path: Cosmo/Sun/Rot_01/Sun001
+        weight: 1
+      - path: Cosmo/Sun/Rot_002
+        weight: 1
+      - path: Cosmo/Sun/Rot_002/Sun002
+        weight: 1
+      - path: Cosmo/Sun/Rot_003
+        weight: 1
+      - path: Cosmo/Sun/Rot_003/Sun003
         weight: 1
       - path: Room
         weight: 1
@@ -337,6 +407,10 @@ ModelImporter:
       - path: Room/wall_04/Glass003
         weight: 1
       - path: Shawdow
+        weight: 1
+      - path: SpaceZ
+        weight: 1
+      - path: Upiter
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -376,7 +450,23 @@ ModelImporter:
         weight: 1
       - path: Cosmo/MoonRot/Moon
         weight: 1
-      - path: Cosmo/SpaceZ
+      - path: Cosmo/SpaceZ_tail
+        weight: 1
+      - path: Cosmo/SpaceZController
+        weight: 1
+      - path: Cosmo/Sun
+        weight: 1
+      - path: Cosmo/Sun/Rot_01
+        weight: 1
+      - path: Cosmo/Sun/Rot_01/Sun001
+        weight: 1
+      - path: Cosmo/Sun/Rot_002
+        weight: 1
+      - path: Cosmo/Sun/Rot_002/Sun002
+        weight: 1
+      - path: Cosmo/Sun/Rot_003
+        weight: 1
+      - path: Cosmo/Sun/Rot_003/Sun003
         weight: 1
       - path: Room
         weight: 1
@@ -429,6 +519,10 @@ ModelImporter:
       - path: Room/wall_04/Glass003
         weight: 1
       - path: Shawdow
+        weight: 1
+      - path: SpaceZ
+        weight: 1
+      - path: Upiter
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
@@ -468,7 +562,23 @@ ModelImporter:
         weight: 1
       - path: Cosmo/MoonRot/Moon
         weight: 1
-      - path: Cosmo/SpaceZ
+      - path: Cosmo/SpaceZ_tail
+        weight: 1
+      - path: Cosmo/SpaceZController
+        weight: 1
+      - path: Cosmo/Sun
+        weight: 1
+      - path: Cosmo/Sun/Rot_01
+        weight: 1
+      - path: Cosmo/Sun/Rot_01/Sun001
+        weight: 1
+      - path: Cosmo/Sun/Rot_002
+        weight: 1
+      - path: Cosmo/Sun/Rot_002/Sun002
+        weight: 1
+      - path: Cosmo/Sun/Rot_003
+        weight: 1
+      - path: Cosmo/Sun/Rot_003/Sun003
         weight: 1
       - path: Room
         weight: 1
@@ -521,6 +631,122 @@ ModelImporter:
       - path: Room/wall_04/Glass003
         weight: 1
       - path: Shawdow
+        weight: 1
+      - path: SpaceZ
+        weight: 1
+      - path: Upiter
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Take 0010
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 1999.9999
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cosmo
+        weight: 1
+      - path: Cosmo/Earth
+        weight: 1
+      - path: Cosmo/MoonRot
+        weight: 1
+      - path: Cosmo/MoonRot/Moon
+        weight: 1
+      - path: Cosmo/SpaceZ_tail
+        weight: 1
+      - path: Cosmo/SpaceZController
+        weight: 1
+      - path: Cosmo/Sun
+        weight: 1
+      - path: Cosmo/Sun/Rot_01
+        weight: 1
+      - path: Cosmo/Sun/Rot_01/Sun001
+        weight: 1
+      - path: Cosmo/Sun/Rot_002
+        weight: 1
+      - path: Cosmo/Sun/Rot_002/Sun002
+        weight: 1
+      - path: Cosmo/Sun/Rot_003
+        weight: 1
+      - path: Cosmo/Sun/Rot_003/Sun003
+        weight: 1
+      - path: Room
+        weight: 1
+      - path: Room/board
+        weight: 1
+      - path: Room/Chair007
+        weight: 1
+      - path: Room/Chair008
+        weight: 1
+      - path: Room/Chair009
+        weight: 1
+      - path: Room/Chair010
+        weight: 1
+      - path: Room/Chair011
+        weight: 1
+      - path: Room/Chair012
+        weight: 1
+      - path: Room/Chair013
+        weight: 1
+      - path: Room/Chair014
+        weight: 1
+      - path: Room/Chair015
+        weight: 1
+      - path: Room/Floor_00
+        weight: 1
+      - path: Room/floor_01
+        weight: 1
+      - path: Room/floor_02
+        weight: 1
+      - path: Room/Table
+        weight: 1
+      - path: Room/TableBoard
+        weight: 1
+      - path: Room/wall_01
+        weight: 1
+      - path: Room/wall_01/Glass
+        weight: 1
+      - path: Room/wall_01 1
+        weight: 1
+      - path: Room/wall_01 1/Glass001
+        weight: 1
+      - path: Room/wall_01 1/Glass002
+        weight: 1
+      - path: Room/wall_02
+        weight: 1
+      - path: Room/wall_03
+        weight: 1
+      - path: Room/wall_04
+        weight: 1
+      - path: Room/wall_04/Glass003
+        weight: 1
+      - path: Shawdow
+        weight: 1
+      - path: SpaceZ
+        weight: 1
+      - path: Upiter
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
