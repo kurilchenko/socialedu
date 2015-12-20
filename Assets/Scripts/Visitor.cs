@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Visitor : MonoBehaviour
 {
+    public bool isInControl;
     public float interactionTime = 0.5f;
     public Transform cameraRig;
     [HideInInspector]
