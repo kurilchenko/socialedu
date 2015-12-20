@@ -124,9 +124,32 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e46a9ae42b7e2f94abb6857e7ac62613, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e46a9ae42b7e2f94abb6857e7ac62613, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &263109478 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 195284, guid: 0a980c6e0f34ce14dbed0933d0521675, type: 2}
+  m_PrefabInternal: {fileID: 1092652723}
+--- !u!114 &263109479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 263109478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de26aa496931bac4e9fb204f963fdaee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headData:
+    name: 
+    poses: []
+  recordName: Visitor
 --- !u!1 &556503153
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,6 +225,60 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!1001 &1092652723
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 483026, guid: 0a980c6e0f34ce14dbed0933d0521675, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.144
+      objectReference: {fileID: 0}
+    - target: {fileID: 483026, guid: 0a980c6e0f34ce14dbed0933d0521675, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.751
+      objectReference: {fileID: 0}
+    - target: {fileID: 483026, guid: 0a980c6e0f34ce14dbed0933d0521675, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.681
+      objectReference: {fileID: 0}
+    - target: {fileID: 483026, guid: 0a980c6e0f34ce14dbed0933d0521675, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000021855694
+      objectReference: {fileID: 0}
+    - target: {fileID: 483026, guid: 0a980c6e0f34ce14dbed0933d0521675, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 483026, guid: 0a980c6e0f34ce14dbed0933d0521675, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 483026, guid: 0a980c6e0f34ce14dbed0933d0521675, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 483026, guid: 0a980c6e0f34ce14dbed0933d0521675, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062340, guid: 0a980c6e0f34ce14dbed0933d0521675, type: 2}
+      propertyPath: near clip plane
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 195284, guid: 0a980c6e0f34ce14dbed0933d0521675, type: 2}
+      propertyPath: m_Name
+      value: student_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 195284, guid: 0a980c6e0f34ce14dbed0933d0521675, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0a980c6e0f34ce14dbed0933d0521675, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1109217295
 Prefab:
   m_ObjectHideFlags: 0
@@ -245,6 +322,10 @@ Prefab:
       propertyPath: near clip plane
       value: 0.01
       objectReference: {fileID: 0}
+    - target: {fileID: 195284, guid: 0a980c6e0f34ce14dbed0933d0521675, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0a980c6e0f34ce14dbed0933d0521675, type: 2}
   m_IsPrefabParent: 0
@@ -287,6 +368,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b3a31a6eed7fc054688645748d7b4911, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3a31a6eed7fc054688645748d7b4911, type: 3}
   m_IsPrefabParent: 0
@@ -307,7 +392,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   headData:
     name: 
-  isRecording: 0
+    poses: []
+  recordName: Visitor
 --- !u!1001 &1666501996
 Prefab:
   m_ObjectHideFlags: 0
@@ -354,6 +440,30 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 00f5a97d1deb72a4ab0442789c860408, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1822369769 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: e46a9ae42b7e2f94abb6857e7ac62613, type: 3}
+  m_PrefabInternal: {fileID: 242503492}
+--- !u!114 &1822369770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1822369769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5994d63c2f3294842b12b63f71417a61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recordName: student_01
+  cameraTrans: {fileID: 1822369772}
+  headData:
+    name: 
+    poses: []
+--- !u!4 &1822369772 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: e46a9ae42b7e2f94abb6857e7ac62613, type: 3}
+  m_PrefabInternal: {fileID: 242503492}
 --- !u!1 &1909785606
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,6 +525,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!1 &2002413480 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: b3a31a6eed7fc054688645748d7b4911, type: 3}
+  m_PrefabInternal: {fileID: 1152018577}
+--- !u!4 &2002413483 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: b3a31a6eed7fc054688645748d7b4911, type: 3}
+  m_PrefabInternal: {fileID: 1152018577}
+--- !u!114 &2002413484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2002413480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5994d63c2f3294842b12b63f71417a61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recordName: student_02
+  cameraTrans: {fileID: 2002413483}
+  headData:
+    name: 
+    poses: []
 --- !u!1 &2024380401
 GameObject:
   m_ObjectHideFlags: 0
