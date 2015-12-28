@@ -37,20 +37,20 @@ public class HeadData
     }
 }
 
-public class RecordHead : MonoBehaviour
+public class RecordHead : Recordable
 {
     public HeadData headData;
     public string recordName;
 
-    bool isRecording;
     float elapsedRecordTime;
     Transform cameraTrans;
 
-    public void Record()
+    public override void Record()
     {
-        Debug.Log(gameObject.name + " starts recording.");
+        base.Record();
 
-        isRecording = true;
+        Debug.Log(gameObject.name + " starts recording head poses.");
+
         elapsedRecordTime = 0;
         //StartCoroutine(CoRecord());
 
@@ -58,13 +58,13 @@ public class RecordHead : MonoBehaviour
         headData.name = gameObject.name;
     }
 
-    public void StopRecording()
+    public override void StopRecording()
     {
-        Debug.Log(gameObject.name + " stops recording.");
+        base.StopRecording();
+
+        Debug.Log(gameObject.name + " stops recording head poses.");
 
         SaveData();
-
-        isRecording = false;
     }
 
 	public void SaveData()
@@ -73,95 +73,20 @@ public class RecordHead : MonoBehaviour
         #if UNITY_EDITOR
         path = Application.dataPath;
         #endif
-        
-        /*
-        var fullPath = path + "/Resources/Heads/" + headData.name + ".txt";
-
-        using (StreamWriter writer = new StreamWriter(fullPath))
-        {
-            writer.Write("Hello!");
-        }
-        */
-
-        //FileStream stream = new FileStream(fullPath, FileMode.Create);
 
         XmlSerializer serializer = new XmlSerializer(typeof(HeadData));
-
-        Debug.Log(serializer.ToString());
 
         Debug.Log(headData.name + " is saving data to " + path);
 
-        FileStream stream = new FileStream(path + "/Resources/Heads/" + headData.name + ".txt", FileMode.Create);
+        FileStream stream = new FileStream(path + "/Resources/Heads/Poses/" + headData.name + ".xml", FileMode.Create);
         serializer.Serialize(stream, headData);
-
-        //Debug.Log((serializer.Deserialize(stream) as HeadData).name);
         stream.Close();
-
     }
 
-    public void LoadData()
+    protected override void Start()
     {
-#if UNITY_EDITOR
-        // Refresh recently changed assets in order to load the last version of the level.
-        UnityEditor.AssetDatabase.Refresh();
-#endif
+        base.Start();
 
-        string path = "Heads/" + recordName;
-
-        //Debug.Log(Resources.Load("Heads/Visitor"));
-
-        TextAsset textAsset = Resources.Load(path) as TextAsset;
-
-        if (textAsset == null)
-        {
-            Debug.LogWarning("File not found in a following path: " + path);
-
-            return;
-        }
-
-        XmlSerializer serializer = new XmlSerializer(typeof(HeadData));
-        HeadData data = null;
-
-        using (TextReader reader = new StringReader(textAsset.text))
-        {
-            data = serializer.Deserialize(reader) as HeadData;
-        }
-
-        if (data == null)
-        {
-            Debug.LogWarning("Not able to serialize a file in a following path: " + path);
-        }
-
-        this.headData = data;
-    }
-
-    public void Play()
-    {
-        LoadData();
-
-        StartCoroutine(CoPlayHeadData());
-    }
-
-    IEnumerator CoPlayHeadData()
-    {
-        for (var i = 0; i < headData.poses.Count; i++)
-        {
-            cameraTrans.position = headData.poses[i].position;
-
-            if (i +1 > headData.poses.Count - 1)
-            {
-                var deltaTime = headData.poses[i + 1].time - headData.poses[i].time;
-
-                yield return new WaitForSeconds(deltaTime);
-            }
-            
-        }
-
-        yield return null;
-    }
-
-    void Start()
-    {
         cameraTrans = GetComponent<Visitor>().cameraRig.GetComponentInChildren<Camera>().transform;
     }
 
@@ -186,12 +111,13 @@ public class RecordHead : MonoBehaviour
         if (!isRecording)
             return;
 
-        headData.AddPose(transform.position, cameraTrans.rotation, elapsedRecordTime);
+        headData.AddPose(cameraTrans.position, cameraTrans.rotation, elapsedRecordTime);
         elapsedRecordTime += Time.fixedDeltaTime;
     }
 	
 	void Update ()
     {
+        /*
         if(Input.GetKeyDown(KeyCode.CapsLock) || Input.GetKeyDown(KeyCode.Mouse0))
         {
             if (isRecording)
@@ -203,7 +129,9 @@ public class RecordHead : MonoBehaviour
                 Record();
             }
         }
+        */
 
+        /*
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             foreach (var r in FindObjectsOfType<PosePlayer>())
@@ -215,6 +143,7 @@ public class RecordHead : MonoBehaviour
             }
 
         }
+        */
 	}
 
 }

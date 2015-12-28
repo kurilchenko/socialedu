@@ -3,11 +3,13 @@ using System.Collections;
 
 public class Visitor : MonoBehaviour
 {
-    public bool isInControl;
+    public bool isInLocalControl;
+    public bool isRecording;
     public float interactionTime = 0.5f;
     public Transform cameraRig;
     [HideInInspector]
     public Sight sight;
+    public GameObject avatar;
 
     public GameObject lastTarget;
     float elapesdTimeOnTarget;
@@ -15,8 +17,25 @@ public class Visitor : MonoBehaviour
 
     void Start()
     {
-        sight = GetComponent<Sight>();
+        //sight = GetComponent<Sight>();
 
+        if (isInLocalControl)
+        {
+            StartLocalControl();
+        }
+        else
+        {
+            StartRemoteControl();
+        }
+
+        if (isRecording && isInLocalControl)
+        {
+            SetupRecording();
+        }
+    }
+
+    void StartLocalControl()
+    {
         if (UnityEngine.VR.VRSettings.enabled)
         {
             cameraRig.gameObject.GetComponent<MouseCameraControl>().enabled = false;
@@ -25,15 +44,26 @@ public class Visitor : MonoBehaviour
         {
             cameraRig.gameObject.GetComponent<MouseCameraControl>().enabled = true;
         }
+
+        if (avatar != null)
+        {
+            avatar.SetActive(false);
+        }
+    }
+
+    void StartRemoteControl()
+    {
+        cameraRig.gameObject.SetActive(false);
     }
 
     void Update()
     {
+        /*
         if (lastTarget != sight.target)
         {
             elapesdTimeOnTarget = 0;
             CancelInvoke("InteractWithTarget");
-            sight.reticleInteraction.focus.completenes = 0;
+            //sight.reticleInteraction.focus.completenes = 0;
 
             if (sight.target != null)
             {
@@ -57,12 +87,24 @@ public class Visitor : MonoBehaviour
 
             portion = portion > 1f ? 1f : portion;
 
-            sight.reticleInteraction.focus.completenes = portion;
+            //sight.reticleInteraction.focus.completenes = portion;
         }
 
         lastTarget = sight.target;
+        */
+
+        #if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.F12))
+        {
+            var currentAntiAliasing = QualitySettings.antiAliasing;
+            QualitySettings.antiAliasing = 16;
+            Application.CaptureScreenshot(Time.time.ToString()+".png", 4);
+            QualitySettings.antiAliasing = currentAntiAliasing;
+        }
+        #endif
     }
 
+    /*
     void InteractWithTarget()
     {
         if (sight.target == null)
@@ -74,6 +116,29 @@ public class Visitor : MonoBehaviour
             return;
 
         thing.Interact();
+    }
+    */
+
+    void SetupRecording()
+    {
+        var recordables = GetComponentsInChildren<Recordable>();
+
+        foreach (var rec in recordables)
+        {
+            rec.Record();
+        }
+
+        Invoke("StopAllRecordings", FindObjectOfType<Awespace.Sequence>().Duration);
+    }
+
+    void StopAllRecordings()
+    {
+        var recordables = GetComponentsInChildren<Recordable>();
+
+        foreach (var rec in recordables)
+        {
+            rec.StopRecording();
+        }
     }
 
 }

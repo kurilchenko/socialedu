@@ -9,8 +9,17 @@ public class Sight : MonoBehaviour
     public Reticle reticleInteraction;
     public float minAngleForVisible = 15f;
     public GameObject target;
+    public LayerMask layerMask = 1;
 
-    RaycastHit hitInfo;
+    public RaycastHit hitInfo;
+
+    public Vector3 facingVector
+    {
+        get
+        {
+            return anchor.forward;
+        }
+    }
 
 	void Start ()
     {
