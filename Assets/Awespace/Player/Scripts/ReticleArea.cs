@@ -37,9 +37,9 @@ public class ReticleArea : MonoBehaviour {
 		#if UNITY_ANDROID
 		//reticle.transform.position = closestPointOnBounds;	
 		reticle.transform.position = Vector3.Lerp(reticle.transform.position, closestPointOnBounds, 30f);
-		#endif
+#endif
 
-		#if UNITY_STANDALONE
+#if UNITY_STANDALONE
 
         // If VR isn't enabled and Alt key isn't pressed--don't move the cursor by the mouse.
         if (!UnityEngine.VR.VRSettings.enabled && !Input.GetKey(KeyCode.LeftAlt))
@@ -57,8 +57,9 @@ public class ReticleArea : MonoBehaviour {
 		}
 
 		reticle.transform.position = collider.bounds.ClosestPoint(reticle.transform.position);
+#endif
 
-		if (Input.GetMouseButtonDown(0)) {
+        if (Input.GetMouseButtonDown(0)) {
 			RaycastHit hitInfo;
 			Physics.Raycast(sight.anchor.position, reticle.transform.position - sight.anchor.position, out hitInfo, sight.layerMask);
 
@@ -70,7 +71,7 @@ public class ReticleArea : MonoBehaviour {
 				}
 			}
 		}
-		#endif
+		
 
 	}
 }
